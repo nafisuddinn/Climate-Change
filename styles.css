@@ -1,0 +1,566 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar{
+    background: #8ab9f7;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background-color: #0d3cb1; /* our title color */
+    background-image: linear-gradient(to top, #270ee3 0%, #e31313 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2 rem;
+}
+
+.fa-gem{
+    margin-right: 0.5 rem; /* */
+}
+
+.navbar__menu{ /* this is what makes the navigation on the top centered*/
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{ /* take action button*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #1d0ec7;
+    color: #fff;
+
+}
+
+.button:hover{ /* of the take action button */
+    background: #c80e24;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover{ /* other link buttons */
+    color: #9610de;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px){ /*when the screen is mobile sized */
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0
+}
+
+.navbar__menu{ /* designing the drop down menu for the mobile version*/
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px; /* making the drop down menu not visible when it goes 
+    back up */
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #131313;
+}
+
+.navbar__menu.active{ /* activated the javascript*/
+    /* animation of the drop down menu */
+
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+}
+
+#navbar__logo{
+    padding-left: 25px;
+}
+
+.navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: al 0.3s ease-in-out;
+    background: #fff;
+}
+
+.navbar__item{
+    width: 100%;
+}
+
+.navar__links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+}
+
+#mobile-menu{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+
+.navbar__btn{
+    padding-bottom: 2rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+}
+
+.navbar__toggle .bar{
+    display: block;
+    cursor: pointer;
+}
+
+/* underneath is the code for the 3 bars in the corner of the menu */
+
+
+#mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+/* Hero Section CSS*/
+
+.main{
+    background-image: linear-gradient(to top, #372b07 0%, #0e510a 25%, #fff 50%, #2e71e5 100%);
+}
+
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-image: linear-gradient(to top, #372b07 0%, #0e510a 25%, #fff 50%, #2e71e5 100%);
+    /* made the linear color start from bottom up so it gives earthy colors*/
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #6e916e 0%, #154615 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2{
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #255fdc 0%, #6b8bd2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main__btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #bf1717 0%, #c88e8e 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+#main__img{
+    height: 80%;
+    width: 80%;
+}
+
+/* Mobile Reponsive */
+
+@media screen and (max-width: 768px){
+    .main__container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1{
+        font-size: 2.5 rem;
+        margin-top: 2 rem;
+    }
+
+    .main__content h2{
+        font-size: 3rem;
+    }
+    
+    .main__content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main__content h1{
+        font-size: 2 rem;
+        margin-top: 3 rem;
+    }
+
+    .main__content h2{
+        font-size: 2rem;
+    }
+    
+    .main__content p{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main__btn{
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* Services */
+
+.services {
+    background-image: linear-gradient(to bottom, #372b07 0%, #161103 100%); /* makes it look we're actually underground in the roots*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%,
+     #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+
+     background-size: 100%;
+     margin-bottom: 5rem;
+     font-size: 2.5rem;
+     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services h2{
+    color: #fff;
+}
+
+.services p {
+    color: #fff;
+}
+
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*Styling for the Preventions page */
+/* we replaced "main" with sub in order to identify the preventions page*/
+
+.sub{
+    background-color: #d8aace;
+}
+.sub__container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #d8aace;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 100px;
+}
+
+.sub__content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #e10909 0%, #8a0c0c 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.sub__content h2{
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #255fdc 0%, #6b8bd2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.sub__content p{
+    margin-top: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* the bottom of the preventions page*/
+
+.services2 {
+    background-image: linear-gradient(to bottom, #d8aace 0%, #ce233d 100%); /* makes it look we're actually underground in the roots*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services2 h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%,
+     #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+
+     background-size: 100%;
+     margin-bottom: 5rem;
+     font-size: 2.5rem;
+     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services2 h2{
+    color: #fff;
+    padding-left: 100px;
+
+}
+
+.services2 p {
+    color: #fff;
+    justify-content: center;
+    margin: 0;
+    padding-left: 100px;
+}
+
+.services2__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services2 button {
+   /* padding-left: 80px; */
+   /* justify-content: center; */
+    margin-left: 100px; /* this aligns it with the text bc we have 120px padding in the other h2, and p*/
+    display: flex;
+    justify-items: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/*Styling for the Go Go Green page */
+/* we replaced "main" with green in order to identify the preventions page*/
+
+.green{
+    background-color: #067024;
+}
+.green__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #067024;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.green__content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #4e4ccd 0%, #1e1bc3 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.green__content h2{
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #255fdc 0%, #6b8bd2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.green__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
