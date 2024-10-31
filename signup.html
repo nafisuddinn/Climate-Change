@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"><!-- font imported from google fonts-->
-    <script> window.chtlConfig = { chatbotId: "5326519724" } </script>
-    <script async data-id="5326519724" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>  <!-- ai bot created with chatling-->
 </head>
 <body>
     <!-- Navbar Section -->
@@ -37,9 +35,6 @@
                 </li>
                 <li class="navbar__item">
                     <a href="/gogreen.html" class="navbargreen__links">
-                      <!---  /*specifically changed the class to green so
-    it is a cool transition where "go green" is the color green when 
-    you hover over the button* -->
                         Go Green <!-- yeah idk we might have to change this-->
                     </a>
                 </li>
@@ -52,42 +47,55 @@
         </div>       
     </nav>
 <!-- Hero Section -->
-<div class="main">
-    <div class="main__container">
-        <div class="main__content">
-            <h1>Climate Change in the World</h1>
-            <h2>Whats Happening?</h2>
-            <p>How to Help</p>
-            <button class="main__btn"><a href="/">Get Started</a></button>
+ <div class="sign">
+    <div class="sign__container">
+        <div class="sign__content">
+            <h1>Sign Up and help make a difference!</h1>
+            <h2>By signing up you can help by 'figure out what to do here' </h2>
+            <p>By signing up, you agree with the terms and conditions. </p>
+         <!---   <button class="green__btn"><a href="/">Get Started</a></button> -->
+         
+            <form>
+                <div class="signupform">
+                    <label for="Name">Name</label>
+                    <br> <!--adding break so the input is underneath the lable-->
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="signupform">
+                    <label for="Email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="signupform">
+                    <label for="Password">Password</label>
+                    <br>
+                    <input type="text" id="password" name="password">
+                </div>
+            </form>
+                 
         </div>
-        <div class="main__image--container">
-            <img src="images/pic1.svg" alt="pic" id="main__img">
+        <div class="green__image--container">
+           <!--- <img src="images/pic1.svg" alt="pic" id="main__img"> -->
         </div>
     </div>
-</div>
+</div> 
 
 <!-- Our services // can change this ;ater-->
-<div class="services">
-    <h1>Roots of Climate Change</h1>
+<!-- <div class="services">
+    <h1>Leading factors of Climate Change</h1>
     <div class="services__container">
         <div class="services__card">
-            <h2>Climate Change is all over the place.</h2>
-            <br>
-            <p>There are multiple factors that contribute to 
-             our planet's declining health.
-            </p>
-            <p>Through the course of 
-                human actions, the planet has been facing shifts in 
-                temperature and weather patterns.</p>
-           <!-- <button>Get Started</button>  we will add later-->
+            <h2>Why is it prevelant?</h2>
+            <p>Change our Ways</p>
+            <button>Get Started</button>
         </div>
-      <!--  <div class="services__card">
+        <div class="services__card">
             <h2>Take matters into your hands</h2>
             <p>Make a difference</p>
             <button>Get Started</button>
-        </div> -->
+        </div>
     </div>
-</div>
+</div> -->
     <script src="app.js"></script>
 </body>
 </html>

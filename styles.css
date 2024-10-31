@@ -69,6 +69,19 @@
     width: 100%;
 }
 
+.navbargreen__links{ /*specifically changed the class to green so
+    it is a cool transition where "go green" is the color green when 
+    you hover over the button*/
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+}
+
 .navbar__btn{
     display: flex;
     justify-content: center;
@@ -100,6 +113,13 @@
 
 .navbar__links:hover{ /* other link buttons */
     color: #9610de;
+    transition: all 0.3s ease;
+}
+
+.navbargreen__links:hover{ /*specifically changed the class to green so
+    it is a cool transition where "go green" is the color green when 
+    you hover over the button*/
+    color: #0f7818;
     transition: all 0.3s ease;
 }
 
@@ -157,7 +177,7 @@
     width: 100%;
 }
 
-.navar__links{
+.navbar__links{
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -359,7 +379,7 @@
     }
 }
 
-/* Services */
+/* Services for the index page*/
 
 .services {
     background-image: linear-gradient(to bottom, #372b07 0%, #161103 100%); /* makes it look we're actually underground in the roots*/
@@ -375,7 +395,7 @@
      #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
 
      background-size: 100%;
-     margin-bottom: 5rem;
+     margin-bottom: 1rem; /*space between heading and text*/
      font-size: 2.5rem;
      -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -385,16 +405,28 @@
 
 .services h2{
     color: #fff;
+    font-size: 1.5rem;
+    display: flex; /*lines 389, 390. & 391 make the text centered*/
+    flex-direction: column;
+    align-items: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    justify-items: center;
+    
 }
 
 .services p {
     color: #fff;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .services__container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* display: flex; */
+  /*  justify-content: center; */
+   /* flex-wrap: wrap; */
 }
 
 
@@ -563,4 +595,58 @@
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+}
+
+
+/* Styling for the sign up page*/
+.sign{
+    background-color: #ffffff;
+}
+.sign__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.sign__content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #4e4ccd 0%, #1e1bc3 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.sign__content h2{
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #255fdc 0%, #6b8bd2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.sign__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #255fdc;
+}
+
+.signupform{
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
