@@ -54,31 +54,59 @@
             <h2>By signing up you can help by 'figure out what to do here' </h2>
             <p>By signing up, you agree with the terms and conditions. </p>
          <!---   <button class="green__btn"><a href="/">Get Started</a></button> -->
+
          
-            <form>
-                <div class="signupform">
-                    <label for="Name">Name</label>
-                    <br> <!--adding break so the input is underneath the lable-->
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="signupform">
-                    <label for="Email">Email</label>
-                    <br>
-                    <input type="text" id="email" name="email">
-                </div>
-                <div class="signupform">
-                    <label for="Password">Password</label>
-                    <br>
-                    <input type="text" id="password" name="password">
-                </div>
-            </form>
-                 
-        </div>
-        <div class="green__image--container">
-           <!--- <img src="images/pic1.svg" alt="pic" id="main__img"> -->
+         
+         
+            
         </div>
     </div>
 </div> 
+
+
+<div class="signupform">
+
+        <form style="border:1px solid #ccc"> 
+
+        <div class="nameform">
+        <label for="Name">Name</label>
+        <br> <!--adding break so the input is underneath the lable-->
+        <input type="text" id="name" name="name" required>
+        </div>
+        
+
+   
+       
+        <div class="emailform">
+        <label for="Email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        </div>
+        
+        
+        <div class="passwordform">
+        <label for="Password">Password</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        </div>
+
+
+        <div>
+            <label for="password_confirmation">Repeat Password</label>
+            <br>
+            <input type="password" id="=password_confirmation" 
+            name="password_confirmation" required>
+        </div>
+        
+        <button>Sign Up</button>
+
+        </form>
+    </div> 
+  
+
+
+
+
 
 <!-- Our services // can change this ;ater-->
 <!-- <div class="services">

@@ -645,8 +645,51 @@
     color: #255fdc;
 }
 
-.signupform{
-    justify-content: center;
+
+
+* {box-sizing: border-box}
+
+label[for=Name], label[for=Email], label[for=Password],label[for=password_confirmation]{
+    width: 20%;
+    padding: 5px;
+    margin: 0px 0px 0px 500px;
+    display: inline-block;
+    border: none;
+   
     align-items: center;
-    font-size: 1rem;
+    justify-self: center;
 }
+
+input[type=text], input[type=email], input[type=password] {
+    width: 20%;
+    padding: 15px;
+    margin: 0px 10px 10px 500px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .signupform {
+    padding: 20px;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+    
+
+
