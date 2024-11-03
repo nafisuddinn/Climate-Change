@@ -600,7 +600,7 @@
 
 /* Styling for the sign up page*/
 .sign{
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #7eb5e9 0%, #127ee4 100%);
 }
 .sign__container{
     display: grid;
@@ -609,7 +609,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #7eb5e9 0%, #127ee4 100%);
     z-index: 1;
     width: 100%;
     max-width: 1300px;
