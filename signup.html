@@ -65,26 +65,26 @@
 
 
 <div class="signupform">
-
-        <form style="border:1px solid #ccc"> 
-
+    <form style="border:1px solid #ccc" action="process-signup.php" method="post"> 
         <div class="nameform">
-        <label for="Name">Name</label>
-        <br> <!--adding break so the input is underneath the lable-->
-        <input type="text" id="name" name="name" required>
+            <label for="name">Name</label>
+            <br> <!-- Adding break so the input is underneath the label -->
+            <input type="text" id="name" name="name" required>
         </div>
-        
 
-   
-       
         <div class="emailform">
-        <label for="Email">Email</label>
-        <br>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" required>
         </div>
-        
-        
-        <div class="passwordform">
+
+        <button class="signupbutton" type="submit">Sign Up</button>
+    </form>
+</div>
+
+
+
+     <!--- <div class="passwordform">
         <label for="Password">Password</label>
         <br>
         <input type="password" id="password" name="password" required>
@@ -96,12 +96,7 @@
             <br>
             <input type="password" id="=password_confirmation" 
             name="password_confirmation" required>
-        </div>
-        
-        <button>Sign Up</button>
-
-        </form>
-    </div> 
+        </div> -->
   
 
 
